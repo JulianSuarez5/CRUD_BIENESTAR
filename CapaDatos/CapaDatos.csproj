@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CD_Usuario.cs" />
     <Compile Include="clsConexion.cs" />
     <Compile Include="clsD_Actividades.cs" />
     <Compile Include="clsD_Usuarios.cs" />
