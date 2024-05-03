@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_Usuario.cs" />
-    <Compile Include="Conexion.cs" />
+    <Compile Include="clsConexion.cs" />
+    <Compile Include="clsD_Actividades.cs" />
+    <Compile Include="clsD_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

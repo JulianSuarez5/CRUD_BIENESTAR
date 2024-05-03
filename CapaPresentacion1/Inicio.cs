@@ -19,8 +19,28 @@ namespace CapaPresentacion1
 
         private void menumantenedor_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            /*Login login = new Login();
+            login.Show();*/
+            frmAdministrador administracion = frmAdministrador.Ventana_Unica();
+            administracion.MdiParent = this;
+            administracion.Show();
+            administracion.BringToFront();
+        }
+
+        private void menuusuario_Click(object sender, EventArgs e)
+        {
+            frmRegistro registro = frmRegistro.Ventana_Unica();
+            registro.MdiParent = this;
+            registro.Show();
+            registro.BringToFront();
+        }
+
+        private void menuInfoActividades_Click(object sender, EventArgs e)
+        {
+            frmInfoActividades infoActividades = new frmInfoActividades();
+            infoActividades.MdiParent = this;
+            infoActividades.Show();
+            infoActividades.BringToFront();
         }
     }
 }

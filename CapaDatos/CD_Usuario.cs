@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,7 @@ namespace CapaDatos
         {
             List<Usuario> Lista = new List<Usuario>();
 
-            using (SqlConnection oconexion = new SqlConnection(Conexion.Cadena))
+            using (SqlConnection oconexion = new SqlConnection(clsConexion.Cadena))
             {
                 try
                 {
@@ -62,3 +62,4 @@ namespace CapaDatos
 
     }
 }
+*/

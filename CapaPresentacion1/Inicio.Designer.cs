@@ -31,10 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
-            this.contenedor = new System.Windows.Forms.Panel();
             this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
-            this.menumantenedor = new FontAwesome.Sharp.IconMenuItem();
-            this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
+            this.menuAdministrador = new FontAwesome.Sharp.IconMenuItem();
+            this.menuInfoActividades = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -60,20 +59,12 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.label1.Font = new System.Drawing.Font("Century", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(48, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienestar UNAULA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contenedor
-            // 
-            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(0, 199);
-            this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1488, 475);
-            this.contenedor.TabIndex = 3;
             // 
             // menuusuario
             // 
@@ -87,33 +78,35 @@
             this.menuusuario.Size = new System.Drawing.Size(182, 79);
             this.menuusuario.Text = "&Regustrarse";
             this.menuusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuusuario.Click += new System.EventHandler(this.menuusuario_Click);
             // 
-            // menumantenedor
+            // menuAdministrador
             // 
-            this.menumantenedor.AutoSize = false;
-            this.menumantenedor.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.menumantenedor.IconColor = System.Drawing.Color.Black;
-            this.menumantenedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menumantenedor.IconSize = 50;
-            this.menumantenedor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menumantenedor.Name = "menumantenedor";
-            this.menumantenedor.Size = new System.Drawing.Size(182, 79);
-            this.menumantenedor.Text = "&Administrador";
-            this.menumantenedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menumantenedor.Click += new System.EventHandler(this.menumantenedor_Click);
+            this.menuAdministrador.AutoSize = false;
+            this.menuAdministrador.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.menuAdministrador.IconColor = System.Drawing.Color.Black;
+            this.menuAdministrador.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuAdministrador.IconSize = 50;
+            this.menuAdministrador.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuAdministrador.Name = "menuAdministrador";
+            this.menuAdministrador.Size = new System.Drawing.Size(182, 79);
+            this.menuAdministrador.Text = "&Administrador";
+            this.menuAdministrador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuAdministrador.Click += new System.EventHandler(this.menumantenedor_Click);
             // 
-            // menuacercade
+            // menuInfoActividades
             // 
-            this.menuacercade.AutoSize = false;
-            this.menuacercade.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.menuacercade.IconColor = System.Drawing.Color.Black;
-            this.menuacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuacercade.IconSize = 50;
-            this.menuacercade.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuacercade.Name = "menuacercade";
-            this.menuacercade.Size = new System.Drawing.Size(182, 79);
-            this.menuacercade.Text = "&Info de las actividades";
-            this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuInfoActividades.AutoSize = false;
+            this.menuInfoActividades.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.menuInfoActividades.IconColor = System.Drawing.Color.Black;
+            this.menuInfoActividades.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuInfoActividades.IconSize = 50;
+            this.menuInfoActividades.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuInfoActividades.Name = "menuInfoActividades";
+            this.menuInfoActividades.Size = new System.Drawing.Size(182, 79);
+            this.menuInfoActividades.Text = "&Info de las actividades";
+            this.menuInfoActividades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuInfoActividades.Click += new System.EventHandler(this.menuInfoActividades_Click);
             // 
             // menuStrip1
             // 
@@ -122,8 +115,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuusuario,
-            this.menumantenedor,
-            this.menuacercade});
+            this.menuAdministrador,
+            this.menuInfoActividades});
             this.menuStrip1.Location = new System.Drawing.Point(0, 116);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1488, 83);
@@ -144,12 +137,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1488, 674);
+            this.ClientSize = new System.Drawing.Size(1488, 830);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.contenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -165,10 +158,9 @@
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel contenedor;
         private FontAwesome.Sharp.IconMenuItem menuusuario;
-        private FontAwesome.Sharp.IconMenuItem menumantenedor;
-        private FontAwesome.Sharp.IconMenuItem menuacercade;
+        private FontAwesome.Sharp.IconMenuItem menuAdministrador;
+        private FontAwesome.Sharp.IconMenuItem menuInfoActividades;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
