@@ -21,16 +21,16 @@ namespace CapaPresentacion1
             }
             return instancia;
         }
-        private clsD_Usuarios datosUsuarios;
-        private clsD_Actividades datosActividades;
+        /*private clsD_Usuarios datosUsuarios;
+        private clsD_Actividades datosActividades;*/
         public frmRegistro()
         {
             InitializeComponent();
-            datosUsuarios = new clsD_Usuarios();
+            /*datosUsuarios = new clsD_Usuarios();
             datosActividades = new clsD_Actividades();
-            CargarActividades();
+            CargarActividades();*/
         }
-        private void CargarActividades()
+        /*private void CargarActividades()
         {
             cboActividad.DataSource = datosActividades.LeerActividades();
             cboActividad.DisplayMember = "Nombre";
@@ -98,6 +98,6 @@ namespace CapaPresentacion1
                 txtCorreo.Clear();
                 cboActividad.SelectedIndex = -1;
             }
-        }
+        }*/
     }
 }
