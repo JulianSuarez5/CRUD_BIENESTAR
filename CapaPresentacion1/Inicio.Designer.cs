@@ -76,7 +76,7 @@
             this.menuusuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuusuario.Name = "menuusuario";
             this.menuusuario.Size = new System.Drawing.Size(182, 79);
-            this.menuusuario.Text = "&Regustrarse";
+            this.menuusuario.Text = "&Registrarse";
             this.menuusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuusuario.Click += new System.EventHandler(this.menuusuario_Click);
             // 
@@ -126,10 +126,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1128, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(1200, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(99, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;

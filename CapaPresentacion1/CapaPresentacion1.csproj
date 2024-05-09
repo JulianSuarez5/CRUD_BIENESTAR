@@ -88,6 +88,9 @@
     <EmbeddedResource Include="frmAdministrador.resx">
       <DependentUpon>frmAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoActividades.resx">
+      <DependentUpon>frmInfoActividades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -125,6 +129,18 @@
       <Project>{549c4c53-b7f2-4e11-9ec5-7cb4e2678941}</Project>
       <Name>CapaEntidad</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9035964_refresh_sharp_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2676937_exit_leave_logout_signout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211934_trash_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564491_add_create_new_plus_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
