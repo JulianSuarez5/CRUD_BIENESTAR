@@ -46,6 +46,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +84,7 @@
             this.label3.Size = new System.Drawing.Size(286, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "CORREO INSTITUCIONAL:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -213,11 +221,103 @@
             this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 16);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "label11";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.label12.Location = new System.Drawing.Point(582, 188);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(144, 24);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "PROGRAMA:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.label13.Location = new System.Drawing.Point(582, 244);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(171, 24);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "ACTIVIDADES:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(561, 183);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(25, 32);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "*";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Red;
+            this.label15.Location = new System.Drawing.Point(561, 240);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 32);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "*";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Derecho",
+            "Ingeniería Informática",
+            "Ingeniería Industrial",
+            "Economía",
+            "Contaduria Pública",
+            "Administración de Empresas",
+            "Licenciatura en Ciencias Sociales"});
+            this.comboBox1.Location = new System.Drawing.Point(891, 183);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(322, 24);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Baloncesto",
+            "Baile",
+            "Teatro",
+            "Gimnasio",
+            "Tenis de mesa",
+            "Ajedrez",
+            "Fútbol",
+            "Futsal"});
+            this.comboBox2.Location = new System.Drawing.Point(891, 240);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(322, 24);
+            this.comboBox2.TabIndex = 23;
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 457);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.panel1);
@@ -264,5 +364,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

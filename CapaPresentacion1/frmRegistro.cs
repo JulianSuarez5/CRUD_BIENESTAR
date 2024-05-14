@@ -31,6 +31,16 @@ namespace CapaPresentacion1
             CargarActividades();*/
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         /*private void CargarActividades()
 {
