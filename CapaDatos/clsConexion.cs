@@ -19,9 +19,9 @@ namespace CapaDatos
         private clsConexion()
         {
             this.Base = "BIENESTAR2";
-            this.Servidor = "Julian-Suarez\\SQLEXPRESS";
-            this.Usuario = "Juaco";
-            this.Clave = "Julian1006";
+            this.Servidor = "Velez77\\SQLEXPRESS";
+            this.Usuario = "JuanJose";
+            this.Clave = "Juan2005";
         }
 
         public SqlConnection CrearConexion()
