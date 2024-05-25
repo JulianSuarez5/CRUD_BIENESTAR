@@ -36,6 +36,7 @@
             this.menuInfoActividades = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,12 +45,12 @@
             // 
             this.menuStrip2.AutoSize = false;
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip2.Size = new System.Drawing.Size(1323, 93);
+            this.menuStrip2.Size = new System.Drawing.Size(1564, 116);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuTitulo";
             // 
@@ -59,9 +60,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.label1.Font = new System.Drawing.Font("Century", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(43, 33);
+            this.label1.Location = new System.Drawing.Point(48, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 33);
+            this.label1.Size = new System.Drawing.Size(331, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienestar UNAULA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,7 +93,7 @@
             this.menuAdministrador.Size = new System.Drawing.Size(182, 79);
             this.menuAdministrador.Text = "&Administrador";
             this.menuAdministrador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuAdministrador.Click += new System.EventHandler(this.menumantenedor_Click);
+            this.menuAdministrador.Click += new System.EventHandler(this.menuAdministrador_Click);
             // 
             // menuInfoActividades
             // 
@@ -111,40 +112,48 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuusuario,
-            this.menuAdministrador,
-            this.menuInfoActividades});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 93);
+            this.menuInfoActividades,
+            this.menuAdministrador});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 116);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1323, 83);
+            this.menuStrip1.Size = new System.Drawing.Size(1564, 85);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menu";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1200, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(1350, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(99, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(111, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(0, 201);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(1564, 600);
+            this.pnlContenedor.TabIndex = 5;
+            // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1323, 664);
+            this.ClientSize = new System.Drawing.Size(1564, 801);
+            this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Inicio";
@@ -166,6 +175,7 @@
         private FontAwesome.Sharp.IconMenuItem menuInfoActividades;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlContenedor;
     }
 }
 

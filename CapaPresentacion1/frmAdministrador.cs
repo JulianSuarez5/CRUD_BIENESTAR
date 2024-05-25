@@ -12,18 +12,14 @@ namespace CapaPresentacion1
 {
     public partial class frmAdministrador : Form
     {
-        private static frmAdministrador instancia = null;
-        public static frmAdministrador Ventana_Unica()
-        {
-            if (instancia == null)
-            {
-                instancia = new frmAdministrador();
-            }
-            return instancia;
-        }
         public frmAdministrador()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class clsD_Usuarios
     {
-        public bool CrearUsuario(string carnet, string nombre, string apellido, string tipoUsuario, string correo)
+        public bool CrearUsuario(string carnet, string nombre, string apellido, string correo, string programa, string actividad, string TipoUsuario)
         {
             bool resultado = false;
             SqlConnection conexion = null;
@@ -22,8 +22,11 @@ namespace CapaDatos
                 comando.Parameters.AddWithValue("@Carnet", carnet);
                 comando.Parameters.AddWithValue("@Nombre", nombre);
                 comando.Parameters.AddWithValue("@Apellido", apellido);
-                comando.Parameters.AddWithValue("@TipoUsuario", tipoUsuario);
+                comando.Parameters.AddWithValue("@TipoUsuario", TipoUsuario);
                 comando.Parameters.AddWithValue("@Correo", correo);
+                comando.Parameters.AddWithValue("@programa", programa);
+                comando.Parameters.AddWithValue("@actividad", actividad);
+
                 conexion.Open();
                 int filasAfectadas = comando.ExecuteNonQuery();
                 resultado = filasAfectadas > 0;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,35 +13,48 @@ namespace CapaPresentacion1
 {
     public partial class Inicio : Form
     {
+        private static IconMenuItem MenuActivo = null;
+        private static Form FormularioActivo = null;
         public Inicio()
         {
             InitializeComponent();
         }
 
-        private void menumantenedor_Click(object sender, EventArgs e)
+        private void AbrirFormulario(IconMenuItem menu, Form formulario)
         {
-            /*Login login = new Login();
-            login.Show();*/
-            frmAdministrador administracion = frmAdministrador.Ventana_Unica();
-            administracion.MdiParent = this;
-            administracion.Show();
-            administracion.BringToFront();
-        }
+            if (MenuActivo != null)
+            {
+                MenuActivo.BackColor = Color.White;
+            }
+            menu.BackColor = Color.Silver;
+            MenuActivo = menu;
 
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Close();
+            }
+            FormularioActivo = formulario;
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+            formulario.BackColor = Color.White;
+
+            pnlContenedor.Controls.Add(formulario);
+            formulario.Show();
+        }
         private void menuusuario_Click(object sender, EventArgs e)
         {
-            frmRegistro registro = frmRegistro.Ventana_Unica();
-            registro.MdiParent = this;
-            registro.Show();
-            registro.BringToFront();
+            AbrirFormulario((IconMenuItem)sender, new frmRegistro());
+        }
+
+        private void menuAdministrador_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem)sender, new frmAdministrador());
         }
 
         private void menuInfoActividades_Click(object sender, EventArgs e)
         {
-            frmInfoActividades infoActividades = new frmInfoActividades();
-            infoActividades.MdiParent = this;
-            infoActividades.Show();
-            infoActividades.BringToFront();
+            AbrirFormulario((IconMenuItem)sender, new frmInfoActividades());
         }
     }
 }
