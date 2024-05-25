@@ -45,7 +45,9 @@ namespace CapaPresentacion1
         }
         private void frmInfoActividades_Load(object sender, EventArgs e)
         {
-
+            dgvInfoActividades.DataSource = ObtenerActividadesConInstructores();
+            dgvInfoActividades.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+            dgvInfoActividades.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
         }
     }
 }

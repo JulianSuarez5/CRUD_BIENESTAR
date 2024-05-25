@@ -42,7 +42,6 @@ namespace CapaPresentacion1
         }
         private bool AutenticarAdministrador(string nombreUsuario, string contraseña)
         {
-            // Aquí deberías hashear la contraseña antes de compararla con la base de datos
             string contraseñaHasheada = HashContraseña(contraseña);
 
             string connectionString = ConfigurationManager.ConnectionStrings["Cadena_Conexion"].ConnectionString;
@@ -62,8 +61,7 @@ namespace CapaPresentacion1
         }
         private string HashContraseña(string contraseña)
         {
-            // Implementa aquí tu lógica de hashing
-            return contraseña; // Esto es solo un marcador de posición, no uses contraseñas en texto plano.
+            return contraseña; 
         }
     }
 }
