@@ -44,16 +44,14 @@
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.cboPrograma = new System.Windows.Forms.ComboBox();
-            this.cboActividad = new System.Windows.Forms.ComboBox();
-            this.cboTipoUsuario = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.cboActividades = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -166,7 +164,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(300, 26);
-            this.txtNombre.TabIndex = 10;
+            this.txtNombre.TabIndex = 0;
             // 
             // txtCorreo
             // 
@@ -174,7 +172,7 @@
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(362, 26);
-            this.txtCorreo.TabIndex = 11;
+            this.txtCorreo.TabIndex = 3;
             // 
             // txtCarnet
             // 
@@ -182,7 +180,7 @@
             this.txtCarnet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCarnet.Name = "txtCarnet";
             this.txtCarnet.Size = new System.Drawing.Size(300, 26);
-            this.txtCarnet.TabIndex = 12;
+            this.txtCarnet.TabIndex = 2;
             // 
             // txtApellido
             // 
@@ -190,7 +188,7 @@
             this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(300, 26);
-            this.txtApellido.TabIndex = 13;
+            this.txtApellido.TabIndex = 1;
             // 
             // panel1
             // 
@@ -201,34 +199,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1586, 72);
             this.panel1.TabIndex = 14;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
-            this.btnRegistrar.Location = new System.Drawing.Point(254, 431);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(197, 102);
-            this.btnRegistrar.TabIndex = 15;
-            this.btnRegistrar.Text = "REGISTRARSE";
-            this.btnRegistrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(962, 431);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(148, 102);
-            this.btnSalir.TabIndex = 16;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label12
             // 
@@ -274,6 +244,7 @@
             // 
             // cboPrograma
             // 
+            this.cboPrograma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPrograma.FormattingEnabled = true;
             this.cboPrograma.Items.AddRange(new object[] {
             "Derecho",
@@ -289,54 +260,50 @@
             this.cboPrograma.Size = new System.Drawing.Size(362, 28);
             this.cboPrograma.TabIndex = 22;
             // 
-            // cboActividad
+            // btnSalir
             // 
-            this.cboActividad.FormattingEnabled = true;
-            this.cboActividad.Items.AddRange(new object[] {
-            "Baloncesto",
-            "Baile",
-            "Teatro",
-            "Gimnasio",
-            "Tenis de mesa",
-            "Ajedrez",
-            "Fútbol",
-            "Futsal"});
-            this.cboActividad.Location = new System.Drawing.Point(1002, 300);
-            this.cboActividad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboActividad.Name = "cboActividad";
-            this.cboActividad.Size = new System.Drawing.Size(362, 28);
-            this.cboActividad.TabIndex = 23;
+            this.btnSalir.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(962, 431);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(148, 102);
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // cboTipoUsuario
+            // btnRegistrar
             // 
-            this.cboTipoUsuario.FormattingEnabled = true;
-            this.cboTipoUsuario.Items.AddRange(new object[] {
-            "Estudiante",
-            "Administrador"});
-            this.cboTipoUsuario.Location = new System.Drawing.Point(1002, 374);
-            this.cboTipoUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboTipoUsuario.Name = "cboTipoUsuario";
-            this.cboTipoUsuario.Size = new System.Drawing.Size(362, 28);
-            this.cboTipoUsuario.TabIndex = 24;
+            this.btnRegistrar.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
+            this.btnRegistrar.Location = new System.Drawing.Point(254, 431);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(197, 102);
+            this.btnRegistrar.TabIndex = 15;
+            this.btnRegistrar.Text = "REGISTRARSE";
+            this.btnRegistrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // label11
+            // cboActividades
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
-            this.label11.Location = new System.Drawing.Point(655, 369);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(208, 30);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "ACTIVIDADES:";
+            this.cboActividades.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboActividades.FormattingEnabled = true;
+            this.cboActividades.Location = new System.Drawing.Point(1002, 300);
+            this.cboActividades.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboActividades.Name = "cboActividades";
+            this.cboActividades.Size = new System.Drawing.Size(362, 28);
+            this.cboActividades.TabIndex = 23;
             // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1581, 666);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.cboTipoUsuario);
-            this.Controls.Add(this.cboActividad);
+            this.Controls.Add(this.cboActividades);
             this.Controls.Add(this.cboPrograma);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -362,6 +329,7 @@
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.frmRegistro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -393,8 +361,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cboPrograma;
-        private System.Windows.Forms.ComboBox cboActividad;
-        private System.Windows.Forms.ComboBox cboTipoUsuario;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cboActividades;
     }
 }

@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
-            this.menuAdministrador = new FontAwesome.Sharp.IconMenuItem();
-            this.menuInfoActividades = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
+            this.menuInfoActividades = new FontAwesome.Sharp.IconMenuItem();
+            this.menuAdministrador = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,40 @@
             this.label1.Text = "Bienestar UNAULA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuusuario,
+            this.menuInfoActividades,
+            this.menuAdministrador});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 116);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1564, 83);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menu";
+            // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(0, 199);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(1564, 851);
+            this.pnlContenedor.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1350, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // menuusuario
             // 
             this.menuusuario.AutoSize = false;
@@ -80,20 +114,6 @@
             this.menuusuario.Text = "&Registrarse";
             this.menuusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuusuario.Click += new System.EventHandler(this.menuusuario_Click);
-            // 
-            // menuAdministrador
-            // 
-            this.menuAdministrador.AutoSize = false;
-            this.menuAdministrador.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.menuAdministrador.IconColor = System.Drawing.Color.Black;
-            this.menuAdministrador.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuAdministrador.IconSize = 50;
-            this.menuAdministrador.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuAdministrador.Name = "menuAdministrador";
-            this.menuAdministrador.Size = new System.Drawing.Size(182, 79);
-            this.menuAdministrador.Text = "&Administrador";
-            this.menuAdministrador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuAdministrador.Click += new System.EventHandler(this.menuAdministrador_Click);
             // 
             // menuInfoActividades
             // 
@@ -109,45 +129,25 @@
             this.menuInfoActividades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuInfoActividades.Click += new System.EventHandler(this.menuInfoActividades_Click);
             // 
-            // menuStrip1
+            // menuAdministrador
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuusuario,
-            this.menuInfoActividades,
-            this.menuAdministrador});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 116);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1564, 85);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menu";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1350, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(0, 201);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1564, 600);
-            this.pnlContenedor.TabIndex = 5;
+            this.menuAdministrador.AutoSize = false;
+            this.menuAdministrador.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.menuAdministrador.IconColor = System.Drawing.Color.Black;
+            this.menuAdministrador.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuAdministrador.IconSize = 50;
+            this.menuAdministrador.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuAdministrador.Name = "menuAdministrador";
+            this.menuAdministrador.Size = new System.Drawing.Size(182, 79);
+            this.menuAdministrador.Text = "&Administrador";
+            this.menuAdministrador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuAdministrador.Click += new System.EventHandler(this.menuAdministrador_Click);
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1564, 801);
+            this.ClientSize = new System.Drawing.Size(1564, 1050);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

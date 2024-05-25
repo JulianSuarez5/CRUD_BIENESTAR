@@ -70,7 +70,7 @@ namespace CapaDatos
             return tabla;
         }
 
-        public bool ActualizarUsuario(int usuarioID, string carnet, string nombre, string apellido, string tipoUsuario, string correo)
+        public bool ActualizarUsuario(int usuarioID, string carnet, string nombre, string apellido, string correo, string programa, string actividad)
         {
             bool resultado = false;
             SqlConnection conexion = null;
@@ -83,8 +83,9 @@ namespace CapaDatos
                 comando.Parameters.AddWithValue("@Carnet", carnet);
                 comando.Parameters.AddWithValue("@Nombre", nombre);
                 comando.Parameters.AddWithValue("@Apellido", apellido);
-                comando.Parameters.AddWithValue("@TipoUsuario", tipoUsuario);
                 comando.Parameters.AddWithValue("@Correo", correo);
+                comando.Parameters.AddWithValue("@actividad", actividad);
+                comando.Parameters.AddWithValue("@Programa", programa);
                 conexion.Open();
                 int filasAfectadas = comando.ExecuteNonQuery();
                 resultado = filasAfectadas > 0;

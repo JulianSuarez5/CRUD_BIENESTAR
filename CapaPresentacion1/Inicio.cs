@@ -49,7 +49,17 @@ namespace CapaPresentacion1
 
         private void menuAdministrador_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((IconMenuItem)sender, new frmAdministrador());
+            Login loginForm = new Login();
+            loginForm.ShowDialog(); // ShowDialog es modal, por lo que el código espera hasta que se cierre el formulario
+
+            if (loginForm.Autenticado)
+            {
+                AbrirFormulario((IconMenuItem)sender, new frmAdministrador());
+            }
+            else
+            {
+                MessageBox.Show("Acceso denegado. Debe autenticarse como administrador.");
+            }
         }
 
         private void menuInfoActividades_Click(object sender, EventArgs e)

@@ -511,10 +511,10 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnIngresar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfoBB4ODgzuLvmMAAAD
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACxAAAAsQAa0jvXUAAAAHdElNRQfoBB4ODgzuLvmMAAAD
         H0lEQVRYR+2YycuNYRiHP8KCzGNkJjNFrP0BikhiY9oY+ljYKPOwMRMWMiR/gRTyF5jZYK2wMGceynBd
         Ond95zjveM73bfjVlc/pfe5nuKfnfVv+qx3VFXpCXxgAA6E/9IJu0CHqBGNhAeyFK3AfHsNTeATX4AAs
         gvHQGdpFk2Ar3IBv8CuDr3AbdsAUcDNNUXdYARr/ATGhf3+E1/CywpvKb7XP3YPV0AMa0iDw+N9DTOCE
@@ -531,10 +531,10 @@
         4Hb92FCrep9j7Nod+jnmX1NLy28/PjgSISbjuwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfoBB4ODgzuLvmMAAAD
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACxAAAAsQAa0jvXUAAAAHdElNRQfoBB4ODgzuLvmMAAAD
         MUlEQVRYR+3Yy69NVxzA8atI45GGJsQzIh6pgRiamHkToRJF6tUywETEDCFhwoCEkcfQm5II2lFJxD9Q
         74GgLRISJKqten+/yVnJytm/ve85995zR/0ln9yTvdf6rXX32eu31z5t/0cLoi9GYyG24gCO1vjZY9/C
         Nn3QshiMBTiC3/Eab/ERn2r87DHP2ca29hmELotemItz+Atp8Ea9wk+YA3N1KgZiCx4hGqwZf2IzBqBD
